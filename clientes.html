@@ -4,31 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina</title>
-    <link rel="stylesheet" href="assets/css/home.css">
+    <title>GME - Gerenciamento de Clientes</title>
+    <link rel="stylesheet" href="assets/css/clientes.css">
 </head>
 
 <body>
     <div id="main">
         <div class="cabecalho-menu">
-            <div class="caixa-logo">
-                <div class="logo">
-                    <a href="/index.html">GME</a>
-                </div>
+            <div class="logo">
+                <a href="index.html">GME</a>
             </div>
             <div>
-                <div><a href="/marcas.html">Marcas</a></div>
-                <div><a href="/categorias.html">Carros</a></div>
-                <div><a href="/clientes.html">Clientes</a></div>
+                <div><a href="marcas.html">Marcas</a></div>
+                <div><a href="categorias.html">Carros</a></div>
+                <div><a href="clientes.html">Clientes</a></div>
             </div>
         </div>
 
-        <div id="titlo-home"></div>
+        <div>
+            <h1>Clientes</h1>
+        </div>
+
+        <div class="card-principal">
+            <!-- Formulário de Adição/Edição -->
+            <div class="card-informacões">
+                <div>
+                    <label for="input-nome">Nome:</label>
+                    <input type="text" id="input-nome" placeholder="Nome do cliente">
+                </div>
+                <div>
+                    <label for="input-cpf">CPF:</label>
+                    <input type="text" id="input-cpf" placeholder="00000000000">
+                </div>
+                <div>
+                    <button type="submit" id="botao-adicionar">Adicionar</button>
+                </div>
+            </div>
+            <div class="caixa-pesquisa">
+                <div>
+                    <label for="input-id">ID:</label>
+                    <input type="text" id="input-id">
+                </div>
+                <div>
+                    <button type="submit" id="botao-pesquisar">Pesquisar</button>
+                </div>
+            </div>
+        </div>
+        <div class="caixa-tabela-apresentacao" id="caixa-tabela-apresentacao">
+            <table id="tabela-apresentacao">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela">
+                    <!-- Conteúdo inserido via JS -->
+                </tbody>
+            </table>
+        </div>
     </div>
-    
 
-
-    <script src="assets/js/home.js"></script>
+    <script src="assets/js/clientes.js"></script>
 </body>
 
 </html>
