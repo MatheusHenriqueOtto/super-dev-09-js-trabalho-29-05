@@ -1,0 +1,242 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+#main {
+    width: 100%;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+/* Cabeçalho */
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 80px;
+    border-bottom: 1px solid #222;
+}
+
+.cabecalho-menu > div:last-child {
+    display: flex;
+    gap: 40px;
+}
+
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Hero */
+
+.caixa-titlo-home {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+.caixa-titlo-home h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #c0392b;
+}
+
+.ciaxa-descricao-titulo {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.ciaxa-descricao-titulo h3 {
+    width: 700px;
+    color: #888;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Seções */
+
+.cixa-objetivo,
+.caixa-benefios,
+.login-div {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 120px;
+}
+
+.cixa-objetivo,
+.caixa-benefios {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Largura padrão do conteúdo */
+
+.cixa-objetivo > div,
+.caixa-benefios > div,
+.login-div > * {
+    width: 800px;
+}
+
+/* Textos */
+
+.cixa-objetivo h4,
+.caixa-benefios h4 {
+    color: #9c1b1b;
+    margin-bottom: 10px;
+}
+
+.cixa-objetivo h2,
+.caixa-benefios h2,
+.login-div h2 {
+    margin-bottom: 20px;
+}
+
+.cixa-objetivo p,
+.caixa-benefios p {
+    margin-bottom: 15px;
+}
+
+/* Benefícios */
+
+.caixa-benefios h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Cards de benefícios */
+
+.caixa-benefios .cards-benefios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.card-beneficio {
+    flex: 1 1 220px;
+    max-width: 260px;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.card-beneficio h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.card-beneficio p {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+/* Login */
+
+.login-div {
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 120px;
+}
+
+.login-div p {
+    width: 800px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.login-box {
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-box input {
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 1rem;
+
+    background-color: #aaa;
+}
+
+.login-box button {
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    background-color: #c0392b;
+    color: #ffffff;
+}
+
+/* Responsividade */
+
+@media (max-width: 900px) {
+
+    .cabecalho-menu {
+        padding: 20px;
+    }
+
+    .cabecalho-menu > div:last-child {
+        gap: 20px;
+    }
+
+    .cixa-objetivo > div,
+    .caixa-benefios > div,
+    .login-div > *,
+    .ciaxa-descricao-titulo h3 {
+        width: 90%;
+    }
+
+    .caixa-titlo-home h1 {
+        font-size: 2.5rem;
+    }
+
+    .login-box {
+        width: 90%;
+    }
+}
+
+.hidden {
+    display: none;
+}
