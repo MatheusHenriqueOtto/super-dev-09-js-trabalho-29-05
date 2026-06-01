@@ -1,0 +1,67 @@
+/* Importar base do home.css se necessário ou replicar estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+#main {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Cabeçalho */
+.cabecalho-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    border-bottom: 1px solid #222;
+}
+
+.cabecalho-menu > div:last-child {
+    display: flex;
+    gap: 40px;
+}
+
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #c0392b;
+}
+
+.marcas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.marca {
+    text-align: center;
+}
+
+.marca img {
+    width: 150px;
+    height: auto;
+}
+
