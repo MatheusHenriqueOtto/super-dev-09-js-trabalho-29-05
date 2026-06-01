@@ -1,0 +1,117 @@
+.cabecalho-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 80px;
+    border-bottom: 1px solid #222;
+}
+
+.cabecalho-menu nav {
+    display: flex;
+    gap: 40px;
+}
+
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #000000;
+    color: #D3D3D3;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #0A0B10;
+    padding: 20px;
+    border: 2px solid #EB4D3D;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #EB4D3D;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+
+    background: #000000;
+    color: #D3D3D3;
+
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.botao-salvar {
+    background: #EB4D3D;
+    color: white;
+    border: none;
+}
+
+.botao-editar {
+    background: #D3D3D3;
+    color: #000;
+    border: none;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.botao-apagar {
+    background: #EB4D3D;
+    color: #fff;
+    border: none;
+    padding: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+    color: #D3D3D3;
+}
+
+th {
+    background: #EB4D3D;
+    color: white;
+}

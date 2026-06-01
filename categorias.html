@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Categorias</title>
+    <link rel="stylesheet" href="assets/css/categoria.css">
+</head>
+
+<body>
+
+    <header class="cabecalho-menu">
+
+        <div class="logo">
+            <a href="/index.html">GME</a>
+        </div>
+
+        <nav>
+            <div>
+                <a href="/marcas.html">Marcas</a>
+            </div>
+
+            <div>
+                <a href="/categorias.html">Carros</a>
+            </div>
+
+            <div>
+                <a href="/clientes.html">Clientes</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <div id="titlo-home"></div>
+    </div>
+
+    <div class="container">
+
+        <h1>Categorias de Carros</h1>
+
+        <form>
+            <input type="text" id="campo-nome" placeholder="Nome da categoria">
+
+            <input type="text" id="campo-descricao" placeholder="Descrição da categoria">
+
+            <button class="botao-salvar">
+                Salvar
+            </button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Categoria</th>
+                    <th>Descrição</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="categorias">
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="assets/js/categorias.js"></script>
+
+</body>
+
+</html>
